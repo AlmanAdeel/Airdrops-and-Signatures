@@ -1,6 +1,6 @@
-# 🐱 CatToken Airdrop – Merkle Tree-Based Token Distribution
+# CatToken Airdrop – Merkle Tree-Based Token Distribution
 
-## 🌐 Overview
+## Overview
 
 This repo contains two key contracts:
 1. `CatToken.sol` – A custom ERC-20 token contract
@@ -14,7 +14,7 @@ Designed for real-world use cases where **mass token distribution** needs to be:
 
 ---
 
-## 🧩 Contract Breakdown
+## Contract Breakdown
 
 ### `CatToken.sol`
 - A simple ERC-20 token named `CatToken` 🐾
@@ -34,7 +34,7 @@ Designed for real-world use cases where **mass token distribution** needs to be:
 
 ---
 
-## 🔐 How It Works
+##  How It Works
 
 1. You generate a Merkle tree off-chain (e.g., using `merkletreejs`)
 2. Deploy `CatToken` and mint the airdrop supply to the `MerkleAirdrop` contract
@@ -44,7 +44,7 @@ Designed for real-world use cases where **mass token distribution** needs to be:
 
 ---
 
-## ✅ Why Merkle Trees?
+## Why Merkle Trees?
 
 - Saves gas by storing a single hash instead of all eligible addresses
 - Scales to **thousands of users** with low on-chain storage
@@ -52,7 +52,7 @@ Designed for real-world use cases where **mass token distribution** needs to be:
 
 ---
 
-## 🔗 Real-World Use Cases
+## Real-World Use Cases
 
 - Community token distributions  
 - Retroactive rewards  
@@ -61,7 +61,7 @@ Designed for real-world use cases where **mass token distribution** needs to be:
 
 ---
 
-## 🧪 Tech Stack
+## Tech Stack
 
 - **Solidity**
 - **OpenZeppelin Contracts**
@@ -70,7 +70,7 @@ Designed for real-world use cases where **mass token distribution** needs to be:
 
 ---
 
-## 💡 Sample Claim Process
+## Sample Claim Process
 
 ```solidity
 merkleAirdrop.claim(
